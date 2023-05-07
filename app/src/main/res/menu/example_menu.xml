@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/callCenter"
+        android:title="Call Center"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/email"
+        android:title="Email"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/editUser"
+        android:title="Edit User"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"/>
+</menu>

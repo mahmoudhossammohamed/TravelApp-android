@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgTour"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                >
+                <TextView
+                    android:id="@+id/nameTour"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Name Tour"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+
+                    android:layout_marginLeft="200dp"
+                    >
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnLoc"
+                        android:layout_marginRight="2dp"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/orange"
+                        android:textSize="8sp"
+                        app:srcCompat="@drawable/ic_loc"
+                        android:onClick="onLocationButtonClick"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/descTour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Desc Tour"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp">
+            <Button
+                android:id="@+id/btnSubCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FF7700"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:onClick="onSubCountButtonClick"
+                >
+
+            </Button>
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Count"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btnAddCount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FF7700"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/priceTour"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Eg Price Tour"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:backgroundTint="#4159DF"
+                android:text="Pay"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:onClick="onPayButtonClick"
+                tools:ignore="TouchTargetSizeCheck,TextSizeCheck">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
